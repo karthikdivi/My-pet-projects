@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            IEEEORN
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/winter/winter.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.0/jquery.mobile.structure-1.4.0.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.0/jquery.mobile-1.4.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="IEEEORN" id="IEEEORN" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="IEEEORN_mobileheader" class="IEEEORN_mobileheader">
+                <!-- <h1 dsid="mobileheader">
+                    IEEE@VNR
+                </h1> -->
+                <!-- mobilenavbar_1 -->
+                <div data-role="navbar" id="IEEEORN_mobilenavbar_1" name="mobilenavbar_1" dsid="mobilenavbar_1"
+                class="IEEEORN_mobilenavbar_1" data-theme="b" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_2 -->
+                        <li>
+                            <a data-theme="b" data-icon="home" href="startScreen.html"  id="IEEEORN_mobilenavbaritem_2" dsid="mobilenavbaritem_2"
+                            name="mobilenavbaritem_2">
+                            HOME
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_3 -->
+                        <li>
+                            <a data-theme="b" class="ui-btn-active ui-state-persist" data-icon="grid" id="IEEEORN_mobilenavbaritem_3" href="EVENTS.html"
+                            dsid="mobilenavbaritem_3" name="mobilenavbaritem_3">
+                            EVENTS
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_4 -->
+                        <li>
+                            <a data-theme="b" data-icon="info" id="IEEEORN_mobilenavbaritem_4" href="aboutus.html" dsid="mobilenavbaritem_4"
+                            name="mobilenavbaritem_4">
+                            ABOUT US
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="IEEEORN_mobilecontainer" name="mobilecontainer" class="IEEEORN_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <link href="IEEEORN.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="IEEEORN.js">
+                </script>
+                <!-- mobileimage_7 -->
+                <img class="IEEEORN_mobileimage_7" src="files/views/assets/image/IMG_0031.JPG" id="IEEEORN_mobileimage_7"
+                dsid="mobileimage_7" name="mobileimage_7" />
+                <!-- html_8 -->
+                <div name="html_8" dsid="html_8" id="IEEEORN_html_8" class="IEEEORN_html_8">
+                    <p>
+                        The worlds largest professional asssociation dedicated in advancing technological
+                        innovation and excellence for the benefit of humanity has made an immense impact on the students
+                        during the
+                        <span style="text-decoration: underline;">
+                            <em>
+                                <strong>
+                                    ORIENTATION
+                                </strong>
+                            </em>
+                        </span>
+                        conducted in vnrvjiet.The presentation regarding the benefits of this esteemed student
+                        chapter inspired the young and energetic minds aspiring to hav a great future
+                        in the feild of engineering.
+                    </p>
+                </div>
+                <!-- mobileimage_9 -->
+                <img class="IEEEORN_mobileimage_9" src="files/views/assets/image/IMG_0037.JPG" id="IEEEORN_mobileimage_9"
+                dsid="mobileimage_9" name="mobileimage_9" />
+                <!-- html_10 -->
+                <div name="html_10" dsid="html_10" id="IEEEORN_html_10" class="IEEEORN_html_10">
+                    <p>
+                        An explanation covering all the corners of
+                        <span style="text-decoration: underline;">
+                            <em>
+                                <strong>
+                                    IEEE
+                                </strong>
+                            </em>
+                        </span>
+                        made many students attract towards it and get registered,this shows their zeal to
+                        know about the updating technology all round the world.The members of
+                        <span style="text-decoration: underline;">
+                            <em>
+                                <strong>
+                                    IEEE
+                                </strong>
+                            </em>
+                        </span>
+                        also conducted an interaction event in the orientation such as quiz the students
+                        on science.The response we got was huge and we promised that they will be benifited
+                        with many seminar and workshops conducted under the supervision of
+                        <span style="text-decoration: underline;">
+                            <em>
+                                <strong>
+                                    IEEE.
+                                </strong>
+                            </em>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="IEEEORN_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="IEEEORN_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

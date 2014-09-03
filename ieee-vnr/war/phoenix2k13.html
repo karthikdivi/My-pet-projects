@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            phoenix2k13
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/winter/winter.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.0/jquery.mobile.structure-1.4.0.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.0/jquery.mobile-1.4.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="phoenix2k13" id="phoenix2k13"
+        class="type-interior" data-theme="b">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader1" id="phoenix2k13_mobileheader1" class="phoenix2k13_mobileheader1">
+                <!-- <h1 dsid="mobileheader1">
+                    IEEE@VNR
+                </h1> -->
+                <!-- mobilenavbar_2 -->
+                <div data-role="navbar" id="phoenix2k13_mobilenavbar_2" name="mobilenavbar_2" dsid="mobilenavbar_2"
+                class="phoenix2k13_mobilenavbar_2" data-theme="b" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_3 -->
+                        <li>
+                            <a data-theme="b" data-icon="home" id="phoenix2k13_mobilenavbaritem_3" href="startScreen.html" "dsid="mobilenavbaritem_3"
+                            name="mobilenavbaritem_3">
+                            HOME
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_4 -->
+                        <li>
+                            <a data-theme="b" class="ui-btn-active ui-state-persist" data-icon="grid" id="phoenix2k13_mobilenavbaritem_4" href="EVENTS.html"
+                            dsid="mobilenavbaritem_4" name="mobilenavbaritem_4">
+                            EVENTS
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_5 -->
+                        <li>
+                            <a data-theme="b" data-icon="info" id="phoenix2k13_mobilenavbaritem_5" href="aboutus.html" dsid="mobilenavbaritem_5"
+                            name="mobilenavbaritem_5">
+                            ABOUT US
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="phoenix2k13_mobilecontainer1" name="mobilecontainer1"
+            class="phoenix2k13_mobilecontainer1 ui-content" dsid="mobilecontainer1" data-theme="b">
+                <link href="phoenix2k13.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="phoenix2k13.js">
+                </script>
+                <!-- mobileimage_15 -->
+                <img class="phoenix2k13_mobileimage_15" src="files/views/assets/image/a_61081_355270921254080_355150546_o.jpg"
+                id="phoenix2k13_mobileimage_15" dsid="mobileimage_15" name="mobileimage_15" />
+                <!-- html_26 -->
+                <div name="html_26" dsid="html_26" id="phoenix2k13_html_26" class="phoenix2k13_html_26">
+                    <p>
+                        The student chapter which has an international status,the student chapter which
+                        creates an environment where members collaborate on world changing technologies,robotics
+                        etc is also known for various annual fests which are a part of its curriculum.
+                    </p>
+                </div>
+                <!-- mobileimage_27 -->
+                <img class="phoenix2k13_mobileimage_27" src="files/views/assets/image/a_74498_358446200936552_1262789499_n_1_.jpg"
+                id="phoenix2k13_mobileimage_27" dsid="mobileimage_27" name="mobileimage_27" />
+                <!-- html_28 -->
+                <div name="html_28" dsid="html_28" id="phoenix2k13_html_28" class="phoenix2k13_html_28">
+                    <p>
+                        <span style="text-decoration: underline;">
+                            <strong>
+                                <em>
+                                    PHOENIX
+                                </em>
+                            </strong>
+                        </span>
+                        ,the annual technical and non technical fest is one of the well known events organised
+                        by
+                        <span style="text-decoration: underline;">
+                            <em>
+                                <strong>
+                                    IEEE-VNRVJIET
+                                </strong>
+                            </em>
+                        </span>
+                        .It is a platform for the students to showcase their skills and talent.
+                        <span style="text-decoration: underline;">
+                            <em>
+                                <strong>
+                                    PHOENIX
+                                </strong>
+                            </em>
+                        </span>
+                        presents a panorama of ideas,PHOENIX brings out the charsima of the participant,come
+                        be a part of the extravaganza.
+                    </p>
+                </div>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="phoenix2k13_mobilefooter1"
+            name="mobilefooter1" dsid="mobilefooter1" id="phoenix2k13_mobilefooter1" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

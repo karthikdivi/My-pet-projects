@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            parade
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/winter/winter.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.0/jquery.mobile.structure-1.4.0.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.0/jquery.mobile-1.4.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="parade" id="parade" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="parade_mobileheader" class="parade_mobileheader">
+                <!-- <h1 dsid="mobileheader">
+                    IEEE@VNR
+                </h1> -->
+                <!-- mobilenavbar_1 -->
+                <div data-role="navbar" id="parade_mobilenavbar_1" name="mobilenavbar_1" dsid="mobilenavbar_1"
+                class="parade_mobilenavbar_1" data-theme="b" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_2 -->
+                        <li>
+                            <a data-theme="b" data-icon="home" id="parade_mobilenavbaritem_2" href="startScreen.html" dsid="mobilenavbaritem_2"
+                            name="mobilenavbaritem_2">
+                            HOME
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_3 -->
+                        <li>
+                            <a data-theme="b" class="ui-btn-active ui-state-persist" data-icon="grid" id="parade_mobilenavbaritem_3" href="EVENTS.html"
+                            dsid="mobilenavbaritem_3" name="mobilenavbaritem_3">
+                            EVENTS
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_4 -->
+                        <li>
+                            <a data-theme="b" data-icon="info" id="parade_mobilenavbaritem_4" dsid="mobilenavbaritem_4" href="aboutus.html"
+                            name="mobilenavbaritem_4">
+                            ABOUT US
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="parade_mobilecontainer" name="mobilecontainer" class="parade_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <link href="parade.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="parade.js">
+                </script>
+                <!-- mobileimage_7 -->
+                <img class="parade_mobileimage_7" src="files/views/assets/image/IMG_4215.JPG" id="parade_mobileimage_7"
+                dsid="mobileimage_7" name="mobileimage_7" />
+                <!-- html_6 -->
+                <div name="html_6" dsid="html_6" id="parade_html_6" class="parade_html_6">
+                    <p>
+                        <span id="docs-internal-guid-e0cb8ff7-aed6-755e-1c75-78c3f81f5b0e" style="font-size: 12px; font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: normal; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">
+                            On 25
+                        </span>
+                        <span style="font-size: 7px; font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: normal; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: super;">
+                            th
+                        </span>
+                        <span style="font-size: 12px; font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: normal; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">
+                            of January 2k14 we the students of VNR VJIET belonging to different clubs came together
+                            and participated in a prestigious parade organised by the forth years with the permission
+                            granted by our college. The proceedings started with the march past followed by exhibition
+                            of various themes taken up by the respective clubs participated in the form of placards.
+                            Students showed how innovative they can be in making the content reach up to every
+                            single individual, and the importance of living was conveyed.
+                        </span>
+                    </p>
+                </div>
+                <!-- mobileimage_8 -->
+                <img class="parade_mobileimage_8" src="files/views/assets/image/IMG_4261.JPG" id="parade_mobileimage_8"
+                dsid="mobileimage_8" name="mobileimage_8" />
+                <!-- html_9 -->
+                <div name="html_9" dsid="html_9" id="parade_html_9" class="parade_html_9">
+                    <p style="line-height: 1; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr">
+                        <span style="font-size: 9px; font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: normal; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">
+                            &nbsp;we the students of IEEE chose our theme to be Education System In India.
+                        </span>
+                    </p>
+                    <p style="line-height: 1; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr">
+                        <span style="font-size: 9px; font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: normal; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">
+                            the points which we expected the organisers to highlight &nbsp;about our theme are
+                            as follows:-
+                        </span>
+                    </p>
+                    <p style="line-height: 1; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr">
+                        <span style="font-size: 9px; font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: normal; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">
+                            &nbsp;*the importance of education in our country, education is the root source
+                            for employment and empowers people to stand on their feet with due respect. in the
+                            present scenario it is like the survival of the fittest and the divine weapon which
+                            can lead the citizens forward is knowledge.
+                        </span>
+                    </p>
+                    <p style="line-height: 1; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr">
+                        <span style="font-size: 9px; font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: normal; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">
+                            * Child labour has become one of the major reasons for letting down the literacy
+                            rate of our country. it is our responsibility to break this hindrance. a child should
+                            be sent to learn, not to earn!
+                        </span>
+                    </p>
+                    <p>
+                        <span style="font-size: 9px; font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: normal; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;">
+                            * Lack of education is leading to the rise of poverty scale in our country. Illiteracy is the reason for poverty today.
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="parade_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="parade_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

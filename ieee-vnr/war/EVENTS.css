@@ -1,0 +1,48 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.0/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* events */
+.EVENTS_events {
+
+}
+.EVENTS_events .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .EVENTS_events ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .EVENTS_events ul li:last-child a {
+	margin-right: -1px !important;
+}
+.EVENTS_events ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
+/* mobilecontainer */
+.ui-content.EVENTS_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobilelist_17 */
+.ui-page .EVENTS_mobilelist_17 {
+	margin: 4px 0px 0px 0px;
+}
+/* mobilelistitem_18 */
+/* mobilelistitembutton_19 */
+.EVENTS_mobilelistitembutton_19 {
+
+}
+/* mobilelistitem_20 */
+/* mobilelistitembutton_21 */
+.EVENTS_mobilelistitembutton_21 {
+
+}
+/* mobilelistitem_22 */
+/* mobilelistitembutton_23 */
+.EVENTS_mobilelistitembutton_23 {
+
+}
+/* mobilefooter */
+.EVENTS_mobilefooter {
+	min-height:38px;
+}

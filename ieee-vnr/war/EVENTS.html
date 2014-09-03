@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            EVENTS
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/winter/winter.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.0/jquery.mobile.structure-1.4.0.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.0/jquery.mobile-1.4.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="EVENTS" id="EVENTS" class="type-interior"
+        data-theme="a">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="EVENTS_mobileheader" class="EVENTS_mobileheader">
+                <!-- <h1 dsid="mobileheader">
+                    IEEE@VNR
+                </h1> -->
+                <!-- events -->
+                <div data-role="navbar" id="EVENTS_events" name="events" dsid="events" class="EVENTS_events"
+                data-theme="b" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_13 -->
+                        <li>
+                            <a data-theme="b" data-icon="home" id="EVENTS_mobilenavbaritem_13" href="startScreen.html"dsid="mobilenavbaritem_13"
+                            name="mobilenavbaritem_13">
+                            HOME
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_14 -->
+                        <li>
+                            <a data-theme="b" class="ui-btn-active ui-state-persist" data-icon="grid" id="EVENTS_mobilenavbaritem_14" href="EVENTS.html"
+                            dsid="mobilenavbaritem_14" name="mobilenavbaritem_14">
+                            EVENTS
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_15 -->
+                        <li>
+                            <a data-theme="b" data-icon="info" id="EVENTS_mobilenavbaritem_15" href="aboutus.html"dsid="mobilenavbaritem_15"
+                            name="mobilenavbaritem_15">
+                            ABOUT US
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="EVENTS_mobilecontainer" name="mobilecontainer" class="EVENTS_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <link href="EVENTS.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="EVENTS.js">
+                </script>
+                <!-- mobilelist_17 -->
+                <ul data-role="listview" id="EVENTS_mobilelist_17" class="EVENTS_mobilelist_17"
+                name="mobilelist_17" dsid="mobilelist_17" data-inset="true" data-theme="b" data-divider-theme="b"
+                data-count-theme="b" style="">
+                    <!-- mobilelistitem_18 -->
+                    <li class="EVENTS_mobilelistitem_18">
+                        <a id="EVENTS_mobilelistitem_18" name="mobilelistitem_18" href="IEEEORN.html" dsid="mobilelistitem_18"
+                        tabindex="1" class="EVENTS_mobilelistitem_18">
+                        <h3>ORIENTATION</h3>
+                        </a>
+                    </li>
+                    <!-- mobilelistitem_20 -->
+                    <li class="EVENTS_mobilelistitem_20">
+                        <a id="EVENTS_mobilelistitem_20" name="mobilelistitem_20" href="parade.html" dsid="mobilelistitem_20"
+                        tabindex="1" class="EVENTS_mobilelistitem_20">
+                        <h3>PARADE</h3>
+                        </a>
+                    </li>
+                    <!-- mobilelistitem_22 -->
+                    <li class="EVENTS_mobilelistitem_22">
+                        <a id="EVENTS_mobilelistitem_22" name="mobilelistitem_22" href="phoenix2k13.html" dsid="mobilelistitem_22"
+                        tabindex="1" class="EVENTS_mobilelistitem_22">
+                        <h3>PHOENIX 2K13</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="EVENTS_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="EVENTS_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

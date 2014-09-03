@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            startScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/winter/winter.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.0/jquery.mobile.structure-1.4.0.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.0/jquery.mobile-1.4.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="startScreen"
+        class="type-interior" data-theme="b">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="inline" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader1" id="startScreen_mobileheader1" class="startScreen_mobileheader1">
+                <!-- <h1 dsid="mobileheader1">
+                    IEEE@VNR
+                </h1> -->
+                <!-- mobilenavbar_2 -->
+                <div data-role="navbar" id="startScreen_mobilenavbar_2" name="mobilenavbar_2" dsid="mobilenavbar_2"
+                class="startScreen_mobilenavbar_2" data-theme="b" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_3 -->
+                        <li>
+                            <a data-theme="b" class="ui-btn-active ui-state-persist" data-icon="home" id="startScreen_mobilenavbaritem_3" href="startScreen.html"
+                            dsid="mobilenavbaritem_3" name="mobilenavbaritem_3">
+                            HOME
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_4 -->
+                        <li>
+                            <a data-theme="b" data-icon="grid" href="EVENTS.html" id="startScreen_mobilenavbaritem_4" dsid="mobilenavbaritem_4"
+                            name="mobilenavbaritem_4">
+                            EVENTS
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_5 -->
+                        <li>
+                            <a data-theme="b" data-icon="info" href="aboutus.html" id="startScreen_mobilenavbaritem_5" dsid="mobilenavbaritem_5"
+                            name="mobilenavbaritem_5">
+                            ABOUT US
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="startScreen_mobilecontainer1" name="mobilecontainer1"
+            class="startScreen_mobilecontainer1 ui-content" dsid="mobilecontainer1" data-theme="b">
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <!-- mobileimage_6 -->
+                <img class="startScreen_mobileimage_6" src="files/views/assets/image/IEEE-logo.jpg"
+                id="startScreen_mobileimage_6" dsid="mobileimage_6" name="mobileimage_6" />
+                <!-- html_9 -->
+                <div name="html_9" dsid="html_9" id="startScreen_html_9" class="startScreen_html_9">
+                    <p>
+                        <span style="text-decoration: underline;">
+                            <em>
+                                <strong>
+                                    IEEE
+                                </strong>
+                            </em>
+                        </span>
+                         is the world's largest technical professional society -- promoting the development and application of electrotechnology and allied sciences for the benefit of humanity, the advancement of the profession, and the well-being of our members. It fosters the development of standards that often become national and international standards.
+                       
+                    </p>
+                    <p>
+                        <span style="text-decoration: underline;">
+                            <em>
+                                <strong>
+                                    STRUCTURE:
+                                </strong>
+                            </em>
+                        </span>
+                    </p>
+                    <p>
+                        <span style="text-decoration: underline;">
+                            <em>
+                                <strong>
+                                    IEEE is organized into:
+                                </strong>
+                            </em>
+                        </span>
+                    </p>
+                    <p>
+                        <span style="line-height: 1.714285714; font-size: 1rem;">
+                            -333 local sections in 10 geographic regions;
+                        </span>
+                    </p>
+                    <p>
+                        <span style="line-height: 1.714285714; font-size: 1rem;">
+                            -more than 2,080 chapters comprised of local members with similar technical interests;
+                        </span>
+                    </p>
+                    <p>
+                        <span style="line-height: 1.714285714; font-size: 1rem;">
+                            -38 societies and 7 technical councils that compose 10 technical divisions;
+                        </span>
+                    </p>
+                    <p>
+                        <span style="line-height: 1.714285714; font-size: 1rem;">
+                            -nearly 2000 student branches at colleges and universities in 80 countries;
+                        </span>
+                    </p>
+                    <p>
+                        <span style="line-height: 1.714285714; font-size: 1rem;">
+                            -more than 530 student branch chapters.
+                        </span>
+                    </p>
+                    <p>
+                        <span style="text-decoration: underline; font-size: small;">
+                            <em>
+                                <strong>
+                                    IEEE Major Boards
+                                </strong>
+                            </em>
+                        </span>
+                    </p>
+                    <p>
+                        <span style="font-size: small;">
+                            Six subordinate boards govern major areas of IEEE interest. Each has an elected
+                            volunteer leader.
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="startScreen_mobilefooter1"
+            name="mobilefooter1" dsid="mobilefooter1" id="startScreen_mobilefooter1" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>

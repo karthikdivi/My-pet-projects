@@ -1,0 +1,59 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.0/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilenavbar_1 */
+.parade_mobilenavbar_1 {
+
+}
+.parade_mobilenavbar_1 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .parade_mobilenavbar_1 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .parade_mobilenavbar_1 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.parade_mobilenavbar_1 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
+/* mobilecontainer */
+.ui-content.parade_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobileimage_7 */
+.parade_mobileimage_7 {
+	margin: 4px 0px 4px 0px;
+	width: 291px; height: 113px;
+	display: block;
+}
+/* html_6 */
+.parade_html_6 {
+	margin: 8px 5px 8px 5px;
+	font-weight: normal;
+	width: 290px; height: 220px;
+}
+div.parade_html_6 {
+	overflow: auto;
+}
+/* mobileimage_8 */
+.parade_mobileimage_8 {
+	margin: 4px 0px 4px 0px;
+	width: 290px; height: 113px;
+	display: block;
+}
+/* html_9 */
+.parade_html_9 {
+	margin: 8px 5px 8px 5px;
+	font-weight: normal;
+	width: 290px; height: 320px;
+}
+div.parade_html_9 {
+	overflow: auto;
+}
+/* mobilefooter */
+.parade_mobilefooter {
+	min-height:38px;
+}

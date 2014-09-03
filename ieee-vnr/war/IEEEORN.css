@@ -1,0 +1,59 @@
+
+/* Define default spinner */
+.ui-icon-loading {
+	background: url("files/resources/lib/jquerymobile/1.4.0/images/ajax-loader.gif") repeat scroll 0 0 / 46px 46px transparent!important;
+}
+/* mobilenavbar_1 */
+.IEEEORN_mobilenavbar_1 {
+
+}
+.IEEEORN_mobilenavbar_1 .ui-grid-a .ui-block-a {
+	clear:none;
+}
+.ui-footer .IEEEORN_mobilenavbar_1 ul li:last-child a {
+	margin-right: 1px !important;
+}
+.ui-header .IEEEORN_mobilenavbar_1 ul li:last-child a {
+	margin-right: -1px !important;
+}
+.IEEEORN_mobilenavbar_1 ul.ui-grid-duo li:nth-child(even) a {
+	margin-right: 1px !important;
+}
+/* mobilecontainer */
+.ui-content.IEEEORN_mobilecontainer {
+	padding: 15px 15px 15px 15px;
+}
+/* mobileimage_7 */
+.IEEEORN_mobileimage_7 {
+	margin: 4px 0px 4px 0px;
+	width: 290px; height: 113px;
+	display: block;
+}
+/* html_8 */
+.IEEEORN_html_8 {
+	margin: 8px 5px 8px 5px;
+	font-weight: normal;
+	width: 290px; height: 270px;
+}
+div.IEEEORN_html_8 {
+	overflow: auto;
+}
+/* mobileimage_9 */
+.IEEEORN_mobileimage_9 {
+	margin: 4px 0px 4px 0px;
+	width: 290px; height: 113px;
+	display: block;
+}
+/* html_10 */
+.IEEEORN_html_10 {
+	margin: 8px 5px 8px 5px;
+	font-weight: normal;
+	width: 290px; height: 290px;
+}
+div.IEEEORN_html_10 {
+	overflow: auto;
+}
+/* mobilefooter */
+.IEEEORN_mobilefooter {
+	min-height:38px;
+}

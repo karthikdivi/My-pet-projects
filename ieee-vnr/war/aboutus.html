@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            aboutus
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/winter/winter.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.0/jquery.mobile.structure-1.4.0.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.0/jquery.mobile-1.4.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="aboutus" id="aboutus" class="type-interior"
+        data-theme="b">
+            <!-- mobileheader -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader" id="aboutus_mobileheader" class="aboutus_mobileheader">
+                <!-- <h1 dsid="mobileheader">
+                    IEEE@VNR
+                </h1> -->
+                <!-- mobilenavbar_1 -->
+                <div data-role="navbar" id="aboutus_mobilenavbar_1" name="mobilenavbar_1" dsid="mobilenavbar_1"
+                class="aboutus_mobilenavbar_1" data-theme="b" style="position: relative;">
+                    <ul>
+                        <!-- mobilenavbaritem_2 -->
+                        <li>
+                            <a data-theme="b" data-icon="home" id="aboutus_mobilenavbaritem_2" href="startScreen.html" dsid="mobilenavbaritem_2"
+                            name="mobilenavbaritem_2">
+                            HOME
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_3 -->
+                        <li>
+                            <a data-theme="b" data-icon="grid" id="aboutus_mobilenavbaritem_3"  href="EVENTS.html"dsid="mobilenavbaritem_3"
+                            name="mobilenavbaritem_3">
+                            EVENTS
+                            </a>
+                        </li>
+                        <!-- mobilenavbaritem_4 -->
+                        <li>
+                            <a data-theme="b" class="ui-btn-active ui-state-persist" data-icon="info" id="aboutus_mobilenavbaritem_4" href="aboutus.html"
+                            dsid="mobilenavbaritem_4" name="mobilenavbaritem_4">
+                            ABOUT US
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobilecontainer -->
+            <div data-role="content" id="aboutus_mobilecontainer" name="mobilecontainer" class="aboutus_mobilecontainer ui-content"
+            dsid="mobilecontainer" data-theme="b">
+                <link href="aboutus.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="aboutus.js">
+                </script>
+                <!-- mobileimage_12 -->
+                <img class="aboutus_mobileimage_12" src="files/views/assets/image/ieee-logo2.jpg"
+                id="aboutus_mobileimage_12" dsid="mobileimage_12" name="mobileimage_12" />
+                <!-- html_8 -->
+                <div name="html_8" dsid="html_8" id="aboutus_html_8" class="aboutus_html_8">
+                    <p>
+                        <span style="font-family: georgia,palatino; font-size: small;">
+                            ABOUT:
+                        </span>
+                    </p>
+                    <p>
+                        The IEEE student branch of our college was formed on august 27th,1998.It was inaugurated
+                        by the IEEE Hydsec chair Mr.N.S.S.Prasad on october 24th,1988.
+                    </p>
+                    <p>
+                        <span style="font-family: georgia,palatino; font-size: small;">
+                            MISSION:
+                        </span>
+                    </p>
+                    <p>
+                        IEEE'S core purpose is to faster technological innovation and excellence&nbsp; for
+                        the benefit of humanity.
+                    </p>
+                    <p>
+                        <span style="font-family: georgia,palatino; font-size: small;">
+                            DESCRIPTION
+                        </span>
+                        :
+                    </p>
+                    <p>
+                        IEEE(Insititute of Electrical&amp;Electronic Engineers) is the world's leading resource
+                        for technological innovation and professional network in the fields of electric,electronic
+                        &amp;computing.A professor acts as a counsellor for the chapter and other office
+                        bearers are nominated by the counsellor.
+                    </p>
+                </div>
+                <!-- mobilelink_10 -->
+                <div class="aboutus_mobilelink_10_link_wrapper">
+                    <a id="aboutus_mobilelink_10" href="www.facebook.com/ieeevnrvjiet" name="mobilelink_10"
+                    dsid="mobilelink_10" class="aboutus_mobilelink_10">
+                    www.facebook.com/ieeevnrvjiet
+                    </a>
+                </div>
+                <!-- html_11 -->
+                <div name="html_11" dsid="html_11" id="aboutus_html_11" class="aboutus_html_11">
+                    <p>
+                        CONTACT US:
+                    </p>
+                    <p>
+                        BHARATIRAJA:+917893889977
+                    </p>
+                    <p>
+                        ROHITH:+918143600601
+                    </p>
+                </div>
+            </div>
+            <!-- mobilefooter -->
+            <div data-role="footer" data-position="fixed" class="aboutus_mobilefooter" name="mobilefooter"
+            dsid="mobilefooter" id="aboutus_mobilefooter" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>
