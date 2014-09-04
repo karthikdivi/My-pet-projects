@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="StarBusModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="StarBusModelStoreContainer">
+          <EntitySet Name="BookingDetails" EntityType="StarBusModel.Store.BookingDetails" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SeatDetails" EntityType="StarBusModel.Store.SeatDetails" store:Type="Tables" store:Schema="dbo" store:Name="SeatDetails">
+            <DefiningQuery>SELECT 
+      [SeatDetails].[BookingID] AS [BookingID], 
+      [SeatDetails].[SeatID] AS [SeatID]
+      FROM [dbo].[SeatDetails] AS [SeatDetails]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_SeatDetails_BookingDetails" Association="StarBusModel.Store.FK_SeatDetails_BookingDetails">
+            <End Role="BookingDetails" EntitySet="BookingDetails" />
+            <End Role="SeatDetails" EntitySet="SeatDetails" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="BookingDetails">
+          <Key>
+            <PropertyRef Name="BookingID" />
+          </Key>
+          <Property Name="BookingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TourID" Type="int" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" />
+          <Property Name="Amount" Type="money" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'D:\TEST PROJECTS\WEBSITE1\APP_DATA\STARBUS.MDF.dbo.SeatDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="SeatDetails">
+          <Key>
+            <PropertyRef Name="BookingID" />
+            <PropertyRef Name="SeatID" />
+          </Key>
+          <Property Name="BookingID" Type="int" Nullable="false" />
+          <Property Name="SeatID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_SeatDetails_BookingDetails">
+          <End Role="BookingDetails" Type="StarBusModel.Store.BookingDetails" Multiplicity="1" />
+          <End Role="SeatDetails" Type="StarBusModel.Store.SeatDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BookingDetails">
+              <PropertyRef Name="BookingID" />
+            </Principal>
+            <Dependent Role="SeatDetails">
+              <PropertyRef Name="BookingID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="SP_SeatDetails_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="BookingID" Type="int" Mode="In" />
+          <Parameter Name="SeatID" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="StarBusModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="StarBusEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BookingDetails" EntityType="StarBusModel.BookingDetail" />
+          <EntitySet Name="SeatDetails" EntityType="StarBusModel.SeatDetail" />
+          <AssociationSet Name="FK_SeatDetails_BookingDetails" Association="StarBusModel.FK_SeatDetails_BookingDetails">
+            <End Role="BookingDetails" EntitySet="BookingDetails" />
+            <End Role="SeatDetails" EntitySet="SeatDetails" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="BookingDetail">
+          <Key>
+            <PropertyRef Name="BookingID" />
+          </Key>
+          <Property Name="BookingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TourID" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Phone" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Amount" Type="Decimal" Precision="19" Scale="4" />
+          <NavigationProperty Name="SeatDetails" Relationship="StarBusModel.FK_SeatDetails_BookingDetails" FromRole="BookingDetails" ToRole="SeatDetails" />
+        </EntityType>
+        <EntityType Name="SeatDetail">
+          <Key>
+            <PropertyRef Name="BookingID" />
+            <PropertyRef Name="SeatID" />
+          </Key>
+          <Property Name="BookingID" Type="Int32" Nullable="false" />
+          <Property Name="SeatID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="BookingDetail" Relationship="StarBusModel.FK_SeatDetails_BookingDetails" FromRole="SeatDetails" ToRole="BookingDetails" />
+        </EntityType>
+        <Association Name="FK_SeatDetails_BookingDetails">
+          <End Role="BookingDetails" Type="StarBusModel.BookingDetail" Multiplicity="1" />
+          <End Role="SeatDetails" Type="StarBusModel.SeatDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BookingDetails">
+              <PropertyRef Name="BookingID" />
+            </Principal>
+            <Dependent Role="SeatDetails">
+              <PropertyRef Name="BookingID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="StarBusModelStoreContainer" CdmEntityContainer="StarBusEntities1">
+          <EntitySetMapping Name="BookingDetails"><EntityTypeMapping TypeName="StarBusModel.BookingDetail"><MappingFragment StoreEntitySet="BookingDetails">
+            <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+            <ScalarProperty Name="TourID" ColumnName="TourID" />
+            <ScalarProperty Name="Name" ColumnName="Name" />
+            <ScalarProperty Name="Phone" ColumnName="Phone" />
+            <ScalarProperty Name="Amount" ColumnName="Amount" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SeatDetails"><EntityTypeMapping TypeName="StarBusModel.SeatDetail"><MappingFragment StoreEntitySet="SeatDetails">
+            <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+            <ScalarProperty Name="SeatID" ColumnName="SeatID" />
+          </MappingFragment></EntityTypeMapping>
+            <EntityTypeMapping TypeName="StarBusModel.SeatDetail">
+              <ModificationFunctionMapping>
+                <InsertFunction FunctionName="StarBusModel.Store.SP_SeatDetails_Insert">
+                  <ScalarProperty Name="SeatID" ParameterName="SeatID" />
+                  <ScalarProperty Name="BookingID" ParameterName="BookingID" />
+                </InsertFunction>
+              </ModificationFunctionMapping>
+            </EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model">
+        <EntityTypeShape EntityType="StarBusModel.BookingDetail" Width="1.5" PointX="0.75" PointY="0.875" Height="1.9210009765625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StarBusModel.SeatDetail" Width="1.5" PointX="3" PointY="1.125" Height="1.4279589843749996" IsExpanded="true" />
+        <AssociationConnector Association="StarBusModel.FK_SeatDetails_BookingDetails" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="1.8389794921874998" />
+          <ConnectorPoint PointX="3" PointY="1.8389794921874998" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
