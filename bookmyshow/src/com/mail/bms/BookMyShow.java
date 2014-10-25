@@ -16,7 +16,7 @@ public class BookMyShow {
 			
 			System.out.println("knock knock "+ new Timestamp (new java.util.Date().getTime()));  
 		
-	        String movieName="Nenokkadine";	
+	        String movieName="NewMovie";	
 	        
 
     		
